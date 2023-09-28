@@ -1,0 +1,355 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    padding-top: 80px; /* Ajusta esto a la altura de tu header */
+  }
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+  header {
+    background-color: #4B0082; /* Morado oscuro */
+    color: #D8BFD8; /* Morado claro */
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Fija el header */
+    width: 100%; /* Ancho completo */
+    top: 0; /* Alinea en la parte superior */
+    z-index: 1000; /* Asegura que esté encima de otros elementos */
+  }
+  
+  .logo {
+    display: inline-block; /* Permite que el enlace abarque solo el tamaño de la imagen */
+  }
+  
+  .logo img {
+    width: 100px; /* Tamaño del logo */
+  }
+  
+  .navigation {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navigation a {
+    color: #D8BFD8; /* Morado claro */
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .navigation a:hover {
+    background-color: #8A2BE2; /* Morado claro más brillante al pasar el ratón */
+    color: white;
+  }
+  .video-container {
+    position: relative;
+    color: #4B0082;
+    width: 100%; /* Ajustamos el ancho al 100% del contenedor */
+    max-width: 800px; /* Establecemos un ancho máximo */
+    margin: 0 auto; /* Centramos el video */
+    padding: 30px;
+  }
+ 
+
+  .section {
+    padding: 40px;
+    
+  }
+  
+  .section-content {
+    max-width: 800px;
+    margin: 0 auto;
+    
+  }
+  
+  .section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .section-content img {
+    width: 50%;
+    border: 2px solid #4B0082; /* Morado oscuro */
+    border-radius: 10px;
+    margin: 0 auto;
+  }
+  
+  .section-bg-image {
+    background-image: url('../imagenes/fondo.jpg');
+    background-size: cover;
+    color: white;
+    padding: 40px;
+  }
+  
+  .section-features .features {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .section-features .feature {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #4B0082; /* Morado oscuro */
+    border-radius: 10px;
+  }
+  
+  .section-features .feature img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  
+  .section-cta {
+    background-color: #4B0082;
+    color: white;
+    text-align: center;
+    padding: 40px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    background-color: #8A2BE2;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .cta-button:hover {
+    background-color: #6A1B9A;
+  }
+
+  .section-sencillo-usar {
+    background-color: #F0F0F0; /* Color de fondo */
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .section-sencillo-usar .section-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .section-sencillo-usar h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #4B0082; /* Color del texto */
+  }
+  
+  .easy-to-use-content p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #555; /* Color del texto */
+  }
+  
+  .feature-image img {
+    width: 300px; /* Ajusta el ancho de la imagen al 100% */
+    border: 2px solid #4B0082; /* Borde con color */
+    border-radius: 10px; /* Borde redondeado */
+    transition: transform 0.3s ease; /* Transición suave en hover */
+    padding: 20px;
+  }
+  
+  .feature-image img:hover {
+    transform: scale(1.05); /* Efecto de escala al hacer hover */
+  }
+  
+  /* Estilo para dispositivos móviles */
+  
+
+  footer {
+    background-color: #4B0082; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 20px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .footer-column {
+    width: 20%; /* Ancho de cada columna */
+    padding: 10px;
+  }
+  
+  .footer-column img {
+    width: 200px;
+    height: auto; /* Para mantener la proporción */
+  }
+  
+  .footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin-bottom: 5px;
+  }
+  
+  .social-buttons a {
+    display: inline-block;
+    margin-right: 10px; /* Espacio entre las imágenes */
+  }
+  
+  .social-buttons a img {
+    width: 40px; /* Ancho de la imagen */
+    height: 40px; /* Altura de la imagen */
+  }
+  
+  ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  ul li a:hover {
+    color: #D8BFD8; /* Cambia el color al pasar el ratón */
+  }
+  
+  .menu-toggle {
+    background-color: #4B0082; /* Color de fondo */
+    color: #D8BFD8; /* Color del texto */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+  }
+  
+  .menu-toggle:hover {
+    background-color: #8A2BE2; /* Color de fondo al pasar el ratón */
+    color: white; /* Color del texto al pasar el ratón */
+  }
+  
+  .menu-toggle {
+    display: none;
+  }
+  
+  .navbar-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+  }
+  @media (max-width: 767px) {
+    .navbar-toggle {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-right: 20px;
+    }
+  
+    .navigation {
+      display: none;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+    }
+  
+    .navigation a {
+      padding: 10px 20px;
+      border: none;
+    }
+  
+    footer {
+      padding: 10px;
+    }
+  
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-column {
+      width: 100%; /* Cambiamos el ancho a 100% en dispositivos móviles */
+      margin-bottom: 20px; /* Agregamos margen inferior para separar las columnas */
+    }
+    
+  }
+  
+
+  @media (min-width: 768px) {
+    .navigation {
+      display: flex !important; /* Hacemos que esté siempre visible */
+    }
+  
+    .navbar-toggle {
+      display: none; /* Esconde el icono de hamburguesa en pantallas más grandes */
+    }
+  }
+   /* Para dispositivos medianos y grandes */
+   @media (min-width: 768px) {
+    .section-bg-image {
+      display: flex;
+      align-items: center;
+    }
+  
+    .section-bg-image img {
+      max-width: 50%;
+      margin-right: 20px;
+    }
+  }
+
+
+  @media (max-width: 767px) {
+    .section-sencillo-usar {
+      padding: 20px; /* Ajusta el relleno para dispositivos móviles */
+    }
+  
+    .features {
+      flex-direction: column; /* Cambia la dirección a column en dispositivos pequeños */
+    }
+  
+    .section-bg-image {
+      border: none;
+      border-radius: 0;
+    }
+  
+    .section-content {
+      padding: 20px;
+    }
+  
+    .section-features .feature {
+      padding: 10px;
+    }
+  
+    .video-container {
+      position: relative;
+      overflow: hidden;
+      margin: 0 auto; /* Centrar */
+    }
+  
+    .video-container iframe {
+      width: 100%; /* Ajusta el ancho para dispositivos móviles */
+      height: 200px; /* Ajusta la altura para dispositivos móviles */
+    }
+  }
+  

@@ -1,0 +1,206 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    padding-top: 80px; /* Ajusta esto a la altura de tu header */
+  }
+  
+  header {
+    background-color: #4B0082; /* Morado oscuro */
+    color: #D8BFD8; /* Morado claro */
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Fija el header */
+    width: 100%; /* Ancho completo */
+    top: 0; /* Alinea en la parte superior */
+    z-index: 1000; /* Asegura que esté encima de otros elementos */
+  }
+  
+  .logo {
+    display: inline-block; /* Permite que el enlace abarque solo el tamaño de la imagen */
+  }
+  
+  .logo img {
+    width: 100px; /* Tamaño del logo */
+  }
+  
+  .navigation {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navigation a {
+    color: #D8BFD8; /* Morado claro */
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .navigation a:hover {
+    background-color: #8A2BE2; /* Morado claro más brillante al pasar el ratón */
+    color: white;
+  }
+  section {
+    padding: 30px;
+    background-color: #9b59b6; /* Morado medio */
+    color: #ecf0f1; /* Color de texto claro */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #ecf0f1; /* Color de texto claro */
+}
+
+section p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+section a {
+    color: #8e44ad; /* Morado oscuro */
+    text-decoration: none;
+}
+
+section a:hover {
+    text-decoration: underline;
+}
+  footer {
+    background-color: #4B0082; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 20px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .footer-column {
+    width: 20%; /* Ancho de cada columna */
+    padding: 10px;
+  }
+  
+  .footer-column img {
+    width: 200px;
+    height: auto; /* Para mantener la proporción */
+  }
+  
+  .footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin-bottom: 5px;
+  }
+  
+  .social-buttons a {
+    display: inline-block;
+    margin-right: 10px; /* Espacio entre las imágenes */
+  }
+  
+  .social-buttons a img {
+    width: 40px; /* Ancho de la imagen */
+    height: 40px; /* Altura de la imagen */
+  }
+  
+  ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  ul li a:hover {
+    color: #D8BFD8; /* Cambia el color al pasar el ratón */
+  }
+  
+  .menu-toggle {
+    background-color: #4B0082; /* Color de fondo */
+    color: #D8BFD8; /* Color del texto */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+  }
+  
+  .menu-toggle:hover {
+    background-color: #8A2BE2; /* Color de fondo al pasar el ratón */
+    color: white; /* Color del texto al pasar el ratón */
+  }
+  
+  .menu-toggle {
+    display: none;
+  }
+  
+  .navbar-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+  }
+  @media (max-width: 767px) {
+    .navbar-toggle {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-right: 20px;
+    }
+  
+    .navigation {
+      display: none;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+    }
+  
+    .navigation a {
+      padding: 10px 20px;
+      border: none;
+    }
+  
+    footer {
+      padding: 10px;
+    }
+  
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-column {
+      width: 100%; /* Cambiamos el ancho a 100% en dispositivos móviles */
+      margin-bottom: 20px; /* Agregamos margen inferior para separar las columnas */
+    }
+    
+  }
+  
+  @media (min-width: 768px) {
+    .navigation {
+      display: flex !important; /* Hacemos que esté siempre visible */
+    }
+  
+    .navbar-toggle {
+      display: none; /* Esconde el icono de hamburguesa en pantallas más grandes */
+    }
+  }

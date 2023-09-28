@@ -1,0 +1,406 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  padding-top: 80px; /* Ajusta esto a la altura de tu header */
+}
+
+header {
+  background-color: #4B0082; /* Morado oscuro */
+  color: #D8BFD8; /* Morado claro */
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed; /* Fija el header */
+  width: 100%; /* Ancho completo */
+  top: 0; /* Alinea en la parte superior */
+  z-index: 1000; /* Asegura que esté encima de otros elementos */
+}
+
+.logo {
+  display: inline-block; /* Permite que el enlace abarque solo el tamaño de la imagen */
+}
+
+.logo img {
+  width: 100px; /* Tamaño del logo */
+}
+
+.navigation {
+  display: flex;
+  gap: 20px;
+}
+
+.navigation a {
+  color: #D8BFD8; /* Morado claro */
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.navigation a:hover {
+  background-color: #8A2BE2; /* Morado claro más brillante al pasar el ratón */
+  color: white;
+}
+
+.page-content {
+  text-align: center;
+  margin: 80px auto 0; /* 80px es la altura de tu header */
+}
+
+.page-title {
+  margin-bottom: 20px;
+}
+
+.page-title h1 {
+  font-size: 36px;
+  color: #4B0082; /* Morado oscuro */
+}
+
+.page-description p {
+  font-size: 18px;
+}
+
+.register-button .button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4B0082; /* Morado oscuro */
+  color: #D8BFD8; /* Morado claro */
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+.register-button .button:hover {
+  background-color: #8A2BE2; /* Morado claro más brillante al pasar el ratón */
+  color: white;
+}
+
+.content-section {
+  display: flex;
+  flex-direction: row; /* Alinea los elementos en una fila */
+  align-items: center; /* Alinea verticalmente los elementos */
+  padding: 30px;
+  margin: 40px 0;
+  background-color: #f9f9f9; /* Color de fondo */
+  border-radius: 10px; /* Esquinas redondeadas */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.text-content {
+  flex: 1; /* Ocupa el espacio restante */
+  padding-right: 20px; /* Espaciado a la derecha */
+}
+
+.text-content h2 {
+  color: #4B0082; /* Color del título */
+  font-size: 24px; /* Tamaño del título */
+}
+
+.text-content p {
+  font-size: 16px; /* Tamaño del texto */
+}
+
+.image-content img {
+  width: 200px; /* Tamaño de la imagen */
+  border-radius: 10px; /* Esquinas redondeadas */
+}
+
+.read-more-button {
+  background-color: #4B0082; /* Morado oscuro */
+  color: #D8BFD8; /* Morado claro */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.read-more-button a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.read-more-button:hover {
+  background-color: #8A2BE2; /* Morado claro más brillante al pasar el ratón */
+  color: white;
+}
+
+#advantages {
+  background-color: #f9f9f9; /* Color de fondo */
+  padding: 20px 0;
+  text-align: center; /* Centra el texto */
+}
+
+.container {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente los elementos */
+  align-items: flex-start; /* Alinea los elementos arriba */
+  flex-wrap: wrap; /* Permite el "ajuste" de los elementos si no caben en una fila */
+}
+
+#advantages h2 {
+  color: #4B0082; /* Color del título */
+  font-size: 36px; /* Tamaño del título */
+  margin-bottom: 20px;
+  width: 100%; /* Ancho completo */
+}
+
+.advantage-item {
+  max-width: 300px;
+  padding: 20px;
+  margin: 10px;
+  background-color: #ffffff; /* Color de fondo */
+  border-radius: 10px; /* Esquinas redondeadas */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.advantage-item h3 {
+  color: #4B0082; /* Color del título */
+  font-size: 24px; /* Tamaño del título */
+}
+
+.advantage-item p {
+  font-size: 16px; /* Tamaño del texto */
+}
+
+.advantage-item .btn {
+  background-color: #4B0082; /* Morado oscuro */
+  color: #D8BFD8; /* Morado claro */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.advantage-item .btn:hover {
+  background-color: #8A2BE2; /* Morado claro más brillante al pasar el ratón */
+  color: white;
+}
+
+#learn-more {
+  background-color: #f9f9f9; /* Color de fondo */
+  padding: 20px;
+  text-align: center;
+}
+
+#learn-more h2 {
+  color: #4B0082; /* Color del título */
+  font-size: 36px; /* Tamaño del título */
+  margin-bottom: 20px;
+}
+
+.learn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.circle h4 {
+  color: #4B0082; /* Color del texto */
+  font-size: 24px; /* Tamaño del texto */
+  margin-top: 10px;
+}
+
+.circle a {
+  display: block;
+  width: 80px; /* Ancho de la imagen */
+  height: 80px; /* Altura de la imagen */
+  background-color: #4B0082; /* Morado oscuro */
+  border-radius: 50%; /* Forma redondeada */
+  transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+
+.circle a img {
+  width: 40px; /* Ancho de la flecha */
+  margin-top: 10px; /* Espacio entre la imagen y el título */
+}
+
+.circle a:hover {
+  background-color: #8A2BE2; /* Morado claro más brillante al pasar el ratón */
+}
+
+footer {
+  background-color: #4B0082; /* Color de fondo */
+  color: white; /* Color del texto */
+  padding: 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  width: 20%; /* Ancho de cada columna */
+  padding: 10px;
+}
+
+.footer-column img {
+  width: 200px;
+  height: auto; /* Para mantener la proporción */
+}
+
+.footer-column h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+
+.social-buttons a {
+  display: inline-block;
+  margin-right: 10px; /* Espacio entre las imágenes */
+}
+
+.social-buttons a img {
+  width: 40px; /* Ancho de la imagen */
+  height: 40px; /* Altura de la imagen */
+}
+
+ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+ul li a:hover {
+  color: #D8BFD8; /* Cambia el color al pasar el ratón */
+}
+
+.menu-toggle {
+  background-color: #4B0082; /* Color de fondo */
+  color: #D8BFD8; /* Color del texto */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+}
+
+.menu-toggle:hover {
+  background-color: #8A2BE2; /* Color de fondo al pasar el ratón */
+  color: white; /* Color del texto al pasar el ratón */
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 3px 0;
+}
+
+/* Media query para dispositivos con un ancho máximo de 767px (típicamente móviles) */
+@media (max-width: 767px){
+  .page-content {
+    padding: 10px;
+  }
+
+  .advantage-item,
+  .circle {
+    max-width: none;
+    width: 100%;
+  }
+
+  .advantage-item .btn,
+  .circle a {
+    width: auto;
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 767px) {
+  .navbar-toggle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 20px;
+  }
+
+  .navigation {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .navigation a {
+    padding: 10px 20px;
+    border: none;
+  }
+
+  footer {
+    padding: 10px;
+  }
+
+  
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-column {
+    width: 100%; /* Cambiamos el ancho a 100% en dispositivos móviles */
+    margin-bottom: 20px; /* Agregamos margen inferior para separar las columnas */
+  }
+  
+}
+
+@media (min-width: 768px) {
+  .navigation {
+    display: flex !important; /* Hacemos que esté siempre visible */
+  }
+
+  .navbar-toggle {
+    display: none; /* Esconde el icono de hamburguesa en pantallas más grandes */
+  }
+}
+
+@media (max-width: 767px) {
+  .content-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .text-content {
+    margin-bottom: 20px;
+  }
+
+  .image-content {
+    margin-bottom: 20px;
+  }
+}
