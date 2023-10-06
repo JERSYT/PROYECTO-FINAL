@@ -4,6 +4,10 @@ body {
     margin: 0;
     padding-top: 80px; /* Ajusta esto a la altura de tu header */
   }
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
   
   header {
     background-color: #4B0082; /* Morado oscuro */
@@ -178,6 +182,78 @@ body {
     }
   }
 
+  h2 {
+    color: #4B0082; /* Morado oscuro */
+  }
+  
+  /* Estilos para cada sección */
+  section {
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    max-width: 80%;
+    margin: 0 auto; /* Centrar el contenido */
+    background-color: #f9f9f9; /* Color de fondo para destacar las secciones */
+    margin-bottom: 20px;
+
+    
+  }
+  
+  /* Carrusel de Imágenes */
+  .carrusel {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 10px;
+    padding: 20px 0;
+  }
+  
+  .carrusel img {
+    max-width: 100%;
+    border: 2px solid #4B0082; /* Morado oscuro */
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .carrusel img:hover {
+    transform: scale(1.05);
+  }
+
+  
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 767px) {
+  section {
+    padding: 20px;
+  }
+
+  .carrusel {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  .carrusel img {
+    max-width: 80vw;
+    height: auto;
+  }
+
+  /* ... Otros estilos ... */
+}
+
+/* Estilos para pantallas medianas y grandes */
+@media (min-width: 768px) {
+  section {
+    max-width: 50%; /* Ajusta el ancho de la sección para pantallas medianas y grandes */
+  }
+
+  .carrusel img {
+    max-width: 30%; /* Ajusta el ancho de las imágenes en el carrusel para pantallas medianas y grandes */
+  }
+
+  /* ... Otros estilos ... */
+}
 
 
   

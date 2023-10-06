@@ -6,3 +6,5 @@ function toggleNavbar() {
       navbarLinks.style.display = "flex";
     }
   }
+
+  
