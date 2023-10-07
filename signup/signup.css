@@ -47,10 +47,117 @@ body {
     color: white;
   }
 
+  .registration-container {
+    padding-top: 40px;   
+     padding-bottom: 40px;
+    margin: 0 auto;
+    display: flex;
+    max-width: 800px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5px; /* Agregamos margen inferior para separar del footer */
+
+  }
+  
+  .registration-form {
+    margin-top: 40px;
+    padding: 40px;
+    flex: 1;
+    margin-bottom: 50px; /* Espacio entre el formulario y el footer */
+
+  }
+  
+  .registration-form h1 {
+    color: #4B0082;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center
+  }
+  
+  .registration-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .registration-form input {
+    width: calc(100% - 10px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+  }
+  label {
+    color: #4B0082;
+    padding: 10px;
+  }
+  
+  .registration-form input:focus {
+    outline: none;
+    border-color: #4B0082;
+  }
+  
+  .registration-form small {
+    color: #888;
+    font-size: 12px;
+  }
+  
+  .registration-form button {
+    padding: 10px 20px;
+    background-color: #4B0082;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .registration-form button:hover {
+    background-color: #8A2BE2;
+  }
+  input{
+
+    background-color: blueviolet;
+    color: #fff;
+  }
+  input::placeholder{
+    color: #fff;
+  }
+  .motivation {
+    flex: 1;
+    padding: 40px;
+    background-color: #4B0082;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+  }
+  
+  .motivation h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .motivation img {
+    width: 100%;
+    max-width: 600px;
+    height: auto ;
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+
+
   footer {
-    background-color: #4B0082; /* Color de fondo */
-    color: white; /* Color del texto */
-    padding: 20px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #4B0082;
+    color: white;
   }
   
   .footer-container {
@@ -158,11 +265,13 @@ body {
   
     footer {
       padding: 10px;
+    
     }
   
     .footer-container {
       flex-direction: column;
       align-items: center;
+
     }
   
     .footer-column {
@@ -171,7 +280,6 @@ body {
     }
     
   }
-  
   @media (min-width: 768px) {
     .navigation {
       display: flex !important; /* Hacemos que esté siempre visible */
@@ -181,77 +289,38 @@ body {
       display: none; /* Esconde el icono de hamburguesa en pantallas más grandes */
     }
   }
-
-  h2 {
-    color: #4B0082; /* Morado oscuro */
-  }
   
-  /* Estilos para cada sección */
-  section {
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    max-width: 80%;
-    margin: 0 auto; /* Centrar el contenido */
-    background-color: #f9f9f9; /* Color de fondo para destacar las secciones */
-    margin-bottom: 20px;
-
-    
-  }
-  
-  /* Carrusel de Imágenes */
-  .carrusel {
-    display: flex;
-    overflow-x: auto;
-    overflow-y: hidden;
-    gap: 10px;
-    padding: 20px 0;
-  }
-  
-  .carrusel img {
-    max-width: 100%;
-    border: 2px solid #4B0082; /* Morado oscuro */
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-  }
-  
-  .carrusel img:hover {
-    transform: scale(1.05);
-  }
-
-  
-/* Estilos para pantallas pequeñas (móviles) */
+  /* Estilos para pantallas más pequeñas (móviles) */
 @media (max-width: 767px) {
-  section {
-    padding: 20px;
-  }
+    .registration-container {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
 
-  .carrusel {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    gap: 10px;
-    padding: 10px 0;
-  }
+    .registration-form {
+        width: 100%;
+        padding-top: 0;
+        padding-bottom: 0;
+        }
 
-  .carrusel img {
-    max-width: 80vw;
-    height: auto;
-  }
+    .registration-form h1 {
+        font-size: 20px;
+    }
 
-  /* ... Otros estilos ... */
+    .registration-form input {
+        width: 100%;
+    }
+
+    .motivation {
+        padding: 20px;
+        text-align: center;
+        
+    }
+    .motivation img{
+        content: url('../imagenes/motivacion.jpg');
+        border-radius: 10px;
+        
+    }
 }
-
-/* Estilos para pantallas medianas y grandes */
-@media (min-width: 768px) {
-  section {
-    max-width: 50%; /* Ajusta el ancho de la sección para pantallas medianas y grandes */
-  }
-
-  .carrusel img {
-    max-width: 30%; /* Ajusta el ancho de las imágenes en el carrusel para pantallas medianas y grandes */
-  }
-
-  /* ... Otros estilos ... */
-}
-

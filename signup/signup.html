@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="signup.css">
+  <link rel="icon" type="image/png" href="../imagenes/logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <a href="../index/index.html">
+            <img src="../imagenes/logo.png" alt="Logo de Organize My Mind" width="100">
+          </a>
+        </div>
+        <div class="navbar-toggle" onclick="toggleNavbar()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <nav class="navigation" id="navbarLinks">
+          <a href="../que-es/queEs.html">¿Qué es?</a>
+      <a href="../quienes-somos/queSomos.html">¿Quiénes somos?</a>
+      <a href="../login/login.html">Iniciar sesión</a>
+      <a href="../signup/signup.html">Registrarse</a>
+        </nav>
+      </header>
+
+      <div class="registration-container">
+        <div class="registration-form">
+          <h1>Regístrate Gratis</h1>
+          <form id="registrationForm">
+            <label for="username"><strong>Nombre de Usuario:</strong></label>
+            <input placeholder="Digite su nombre de usuario" type="text" id="username" name="username" pattern="[a-zA-Z0-9-_]{1,20}" required>
+            <small>De 1 a 20 caracteres. Solo letras, números, guiones o barras bajas.</small>
+    
+            <label for="email"><strong>Correo Electrónico:</strong></label>
+            <input placeholder="Digite su correo electrónico" type="email" id="email" name="email" required>
+    
+            <label for="password"><strong>Contraseña:</strong></label>
+            <input placeholder="Digite contraseña" type="password" id="password" name="password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[-_,.;@?¿])[A-Za-z0-9-_.,;@?¿]{10,20}" required>
+            <small>De 10 a 20 caracteres. Al menos una mayúscula, una minúscula, un dígito y un caracter especial.</small>
+    
+            <label for="confirmPassword"><strong>Confirmar Contraseña:</strong></label>
+            <input placeholder="Digite para confirmar su contraseña" type="password" id="confirmPassword" name="confirmPassword" required>
+    
+            <label>
+              <input type="checkbox" required>
+              He leído y acepto los <a href="../pestañas-legales/terminos.html">Términos y Condiciones</a>.
+            </label>
+    
+            <button type="submit">Registrarse</button>
+          </form>
+        </div>
+    
+        <div class="motivation">
+          <h2>Motívate a Organizar tu Mente</h2>
+          <p>Únete a Organize My Mind y descubre una forma más eficiente de gestionar tu vida y alcanzar tus metas.</p>
+          <img src="../imagenes/motivacion1.jpg" alt="Motivación para Registrarse">
+        </div>
+      </div>
+
+    <footer>
+        <div class="footer-container">
+          <div class="footer-column">
+            <a href="../index/index.html">
+              <img src="../imagenes/logo.png" alt="Logo de la empresa">
+            </a>
+          </div>
+          <div class="footer-column">
+            <h3>Servicios de la página web</h3>
+            <ul>
+              <li><a href="../que-es/queEs.html">¿Qué es?</a></li>
+              <li><a href="../quienes-somos/queSomos.html">¿Qué somos?</a></li>
+              <li><a href="../login/login.html">Iniciar sesión</a></li>
+              <li><a href="../signup/signup.html">Registrarse</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Pestañas Legales</h3>
+            <ul>
+              <li><a href="../pestañas-legales/terminos.html">Términos y condiciones</a></li>
+          <li><a href="../pestañas-legales/politica-de-privacidad.html">Política de privacidad</a></li>
+          <li><a href="../pestañas-legales/aviso-legal.html">Aviso legal</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Redes Sociales</h3>
+            <div class="social-buttons">
+              <a target="_blank" href="https://www.facebook.com"><img src="../imagenes/facebook.png" alt="Facebook"></a>
+              <a target="_blank" href="https://www.twitter.com"><img src="../imagenes/twitter.png" alt="Twitter"></a>
+              <a target="_blank" href="https://www.instagram.com"><img src="../imagenes/instagram.png" alt="Instagram"></a>
+              <a target="_blank" href="https://www.linkedin.com"><img src="../imagenes/linkedin.png" alt="LinkedIn"></a>
+            </div>
+            <p>&copy; 2023 Organize my mind</p>
+          </div>
+        </div>
+      </footer>
+      <script defer src="signup.js"></script>
+</body>
+</html>
