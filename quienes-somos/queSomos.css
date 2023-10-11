@@ -1,4 +1,6 @@
 body {
+  background-size: cover;
+  background-image: url("../imagenes/fondo_1.jpg");
     font-family: Arial, sans-serif;
     padding: 0;
     margin: 0;

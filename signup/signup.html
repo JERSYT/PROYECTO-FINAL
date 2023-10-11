@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <link rel="stylesheet" href="signup.css">
   <link rel="icon" type="image/png" href="../imagenes/logo.png">
@@ -39,18 +39,19 @@
             <input placeholder="Digite su correo electrónico" type="email" id="email" name="email" required>
     
             <label for="password"><strong>Contraseña:</strong></label>
-            <input placeholder="Digite contraseña" type="password" id="password" name="password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[-_,.;@?¿])[A-Za-z0-9-_.,;@?¿]{10,20}" required>
+            <input placeholder="Digite su contraseña" type="password" id="password" name="password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[-_,.;@?¿])[A-Za-z0-9-_.,;@?¿]{10,20}" required>
             <small>De 10 a 20 caracteres. Al menos una mayúscula, una minúscula, un dígito y un caracter especial.</small>
     
             <label for="confirmPassword"><strong>Confirmar Contraseña:</strong></label>
             <input placeholder="Digite para confirmar su contraseña" type="password" id="confirmPassword" name="confirmPassword" required>
     
-            <label>
+            <label class="terminos-signup">
               <input type="checkbox" required>
               He leído y acepto los <a href="../pestañas-legales/terminos.html">Términos y Condiciones</a>.
             </label>
     
-            <button type="submit">Registrarse</button>
+            <div><button type="submit">Registrarse</button></div>
+            <div class="login-link">¿Ya tienes cuenta en Organize my mind?<a href="../login/login.html">Inicia Sesión</a></div>
           </form>
         </div>
     

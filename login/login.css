@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #4B0082;
+  }
+  
+  .container {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    color:#4B0082;
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  
+  .form-group {
+    padding: 5px;
+    margin: 15px 0; 
+  }
+  
+  .form-group label {
+    padding: 10px;
+    display: block;
+    color: #a749a7;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    width: calc(100% - 10px);
+    background-color: blueviolet;
+    color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .form-group input::placeholder{
+    color: #fff;
+  }
+  
+  .form-group input:focus {
+    outline: none;
+    border: #ff00ff solid 2px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #4B0082;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #8A2BE2;
+  }
+  
+  .register-link {
+    margin-top: 20px;
+  }
+  
+  .register-link a {
+    text-decoration: none;
+    color: #4B0082;
+    transition: color 0.3s ease;
+  }
+  
+  .register-link a:hover {
+    color: #8A2BE2;
+    text-decoration: underline;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 767px) {
+    .container {
+      padding: 20px;
+    }
+  }
+  

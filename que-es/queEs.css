@@ -83,6 +83,10 @@ body {
     border-radius: 10px;
     margin: 0 auto;
   }
+
+  .section-content-h2{
+    color: #4B0082;
+  }
   
   .section-bg-image {
     background-image: url('../imagenes/fondo.jpg');
