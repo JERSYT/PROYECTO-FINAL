@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+  }
+  
+  .navbar-left img {
+    max-height: 40px;
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  #admin-icon {
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  
+  #admin-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  #admin-icon:hover + #admin-menu {
+    display: block;
+  }
+  
+  #admin-menu ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #admin-menu li {
+    padding: 10px;
+  }
+  
+  #admin-menu li:hover {
+    background-color: #eee;
+  }
+  
+  .search-bar {
+    flex-grow: 1;
+    margin: 0 20px;
+  }
+  
+  .search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .note-creator {
+    width: 50%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+  }
+  
+  .note-creator h2 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .note-creator input,
+  .note-creator textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .note-creator button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .note-creator button:hover {
+    background-color: #555;
+  }
+  
+  .note {
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .note:hover {
+    transform: scale(1.05);
+  }
+  
+  .note h2 {
+    margin-bottom: 10px;
+  }
+  
+  .note p {
+    margin: 0;
+  }
+  
+  .note img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  
+  

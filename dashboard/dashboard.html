@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="dashboard.css">
+  <title>Gestor de Tareas</title>
+</head>
+<body>
+  <nav>
+    <div class="navbar-left">
+      <img src="/imagenes/logo.png" alt="Logo">
+    </div>
+    <div class="navbar-right">
+      <a href="#" id="admin-icon">Admin</a>
+      <div id="admin-menu">
+        <ul>
+          <li><a href="../index.html">Cerrar Sesión</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="search-bar">
+      <input type="text" id="search-input" placeholder="Buscar notas">
+    </div>
+  </nav>
+  
+  <div class="content">
+    <div class="note-creator">
+  <h2>Nueva Nota</h2>
+    <input type="text" id="note-title" placeholder="Título de la nota">
+    <textarea id="note-text" placeholder="Contenido de la nota"></textarea>
+    <input type="color" id="note-color" value="#ffffff">
+    <input type="file" id="note-image" accept="image/*">
+     <label for="note-datetime">Recordatorio:</label>
+    <input type="datetime-local" id="note-datetime">
+    <button id="create-note">Crear Nota</button>
+</div>
+
+    <div class="note-container" id="note-container">
+      <!-- Notas se cargarán aquí -->
+    </div>
+  </div>
+
+  <script defer src="dashboard.js"></script>
+</body>
+</html>

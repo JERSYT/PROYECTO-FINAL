@@ -13,5 +13,9 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     // If all fields are filled, you can proceed with form submission
     // Replace this with your form submission logic, e.g., making an AJAX request
     alert('Iniciar sesión: ' + username);
+
   });
-  
+  document.getElementById('dashboardButton').addEventListener('click', function() {
+  // Redirige a la página de dashboard
+  window.location.href = '../dashboard/dashboard.html';
+});
